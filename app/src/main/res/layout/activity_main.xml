@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background">
+    tools:context=".MainActivity">
+<!--    android:background="@drawable/background"-->
+
     <TextView
         android:id="@+id/tv_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let's Train Buddy"
+        android:text="@string/let_s_train_buddy"
         android:textSize="40sp"
         android:fontFamily="@font/bebasneue"
         android:textColor="@color/white"
@@ -24,7 +25,8 @@
         android:src="@drawable/rectangle"
         app:layout_constraintBottom_toTopOf="@id/btn_signIn"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:contentDescription="@string/bg_image" />
     <Button
         android:id="@+id/btn_signIn"
         android:layout_width="match_parent"
@@ -32,6 +34,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:text="Sign In To Your Account"
+        android:text="@string/sign_in_to_your_account"
         android:backgroundTint="@color/black"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
